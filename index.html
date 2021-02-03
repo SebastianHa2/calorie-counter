@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Calorie Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Calorie Tracker</h1>
+
+            <a href="#" id="clear-all">Clear All</a>
+        </div>
+
+        <div class="add-edit-meal add">
+            <h2>Add Meal / Food Item</h2>
+            <div class="form">
+                <form action="#">
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label for="meal">Meal</label>
+                            <input type="text" id="meal" placeholder="Add Meal">
+                        </div>
+                        <div class="input-group">
+                            <label for="calories">Calories</label>
+                            <input type="numbers" id="calories" placeholder="Calories">
+                        </div>
+                    </div>
+                    <input type="button" value="ADD" id="submit-btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="add-edit-meal edit">
+            <h2>Update Meal / Food Item</h2>
+            <div class="form">
+                <form action="#">
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label for="meal">Meal</label>
+                            <input type="text" class="editMeal" id="meal" value="" placeholder="Add Meal">
+                        </div>
+                        <div class="input-group">
+                            <label for="calories">Calories</label>
+                            <input type="numbers" class="editCalories" id="calories" value="" placeholder="Calories">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <input type="button" value="edit" id="edit-btn" class="btn">
+                        <input type="button" value="delete" id="delete-btn" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="calorie-counter">
+            <p>Total Calories: ---</p>
+        </div>
+
+        <div class="meal-list">
+            <table class="meal-table">
+                <tr>
+                    <thead>
+                        <th>Meal</th>
+                        <th>Calories</th>
+                        <th></th>
+                    </thead>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

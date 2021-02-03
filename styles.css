@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: #4a91f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header h1{
+    font-size: 3rem;
+    color: #f8fbff;
+    text-shadow: 0.1rem 0.2rem 0.2rem #000;
+}
+
+.header a{
+    width: 12rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: #f8fbff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 10rem;
+    transform: translate(-50%, -50%);
+    transition: filter 0.3s;
+}
+
+.header a:hover{
+    filter: brightness(90%);
+}
+
+/* ADD MEAL SECTION */
+
+.add-edit-meal{
+    width: 50%;
+    margin: auto;
+    border: 0.1rem solid #000;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.add-edit-meal h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form{
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group input{
+    width: 80%;
+    height: 2.5rem;
+}
+
+.input-group input:focus{
+    outline: none;
+}
+
+.input-group label{
+    font-size: 1.5rem;
+}
+
+#submit-btn{
+    width: 20%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: #4a91f2;
+    border: none;
+    color: #f8fbff;
+    box-shadow: -0.2rem 0.2rem 0.2rem #000;
+    transition: filter 0.3s;
+}
+
+#submit-btn:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+/* Update Section */
+
+
+
+.buttons{
+    width: 100%;
+    display: flex;
+}
+
+.btn{
+    width: 20%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #f8fbff;
+    box-shadow: -0.2rem 0.2rem 0.2rem #000;
+    transition: filter 0.3s;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+#edit-btn{
+    margin-right: 1rem;
+    background-color: #edc951;
+}
+
+#delete-btn{
+    background-color: #cc2a36;
+}
+
+.edit{
+    display: none;
+}
+
+/* Calorie Counter and Meal List */
+
+.calorie-counter{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+.meal-list{
+    width: 50%;
+    margin: auto;
+}
+
+.meal-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.1rem solid #000;
+}
+
+.meal-table thead{
+    font-size: 2rem;
+    text-align: center;
+    border-bottom: 0.1rem solid #000;
+}
+
+.meal-table td{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 0.1rem solid #000;
+}
+
+/* MEDIA QUERIES */ 
+
+@media(max-width: 900px){
+    #clear-all{
+        right: 0;
+    }
+}
+
